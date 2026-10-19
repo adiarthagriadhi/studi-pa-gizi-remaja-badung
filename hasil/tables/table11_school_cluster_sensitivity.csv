@@ -1,0 +1,40 @@
+outcome,model,contrast,estimate,ci_low,ci_high,p,n_students,n_schools,n_permutations
+paqc_skor,"linear mixed model, random school intercept",suburban vs urban,0.03017,-0.134,0.1943,0.7187,1897,5,
+paqc_skor,"linear mixed model, random school intercept",rural vs urban,-0.05596,-0.2237,0.1118,0.5132,1897,5,
+paqc_skor,school-level permutation of area labels (trend),trend per area step,-0.02801,,,0.5,1897,5,30
+walking,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-6.424,-21.16,8.316,0.393,1832,5,
+walking,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-19.08,-34.08,-4.07,0.01272,1832,5,
+walking,school-level permutation of area labels (trend),trend per area step,0.619,,,0.1333,1832,5,30
+swimming,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-10.47,-22.06,1.123,0.07672,1867,5,
+swimming,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-15.72,-27.62,-3.81,0.009676,1867,5,
+swimming,school-level permutation of area labels (trend),trend per area step,0.7256,,,0.06667,1867,5,30
+volleyball,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,23.55,-10.46,57.56,0.1747,1867,5,
+volleyball,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,24.52,-9.641,58.68,0.1595,1867,5,
+volleyball,school-level permutation of area labels (trend),trend per area step,1.52,,,0.4,1867,5,30
+gymnastics,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,14.17,2.669,25.67,0.01575,1859,5,
+gymnastics,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,21.54,9.734,33.35,0.0003491,1859,5,
+gymnastics,school-level permutation of area labels (trend),trend per area step,1.627,,,0.1,1859,5,30
+barrier_time,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-11.01,-20.87,-1.143,0.02873,1897,5,
+barrier_time,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-12.19,-22.43,-1.936,0.0198,1897,5,
+barrier_time,school-level permutation of area labels (trend),trend per area step,0.7654,,,0.1,1897,5,30
+barrier_injury,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,5.911,-1.866,13.69,0.1363,1897,5,
+barrier_injury,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,12.38,3.897,20.86,0.004231,1897,5,
+barrier_injury,school-level permutation of area labels (trend),trend per area step,1.467,,,0.03333,1897,5,30
+barrier_dislike,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-1.907,-7.758,3.945,0.523,1897,5,
+barrier_dislike,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-5.65,-11.72,0.42,0.0681,1897,5,
+barrier_dislike,school-level permutation of area labels (trend),trend per area step,0.6861,,,0.1,1897,5,30
+animal_protein_7,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-10.06,-20.01,-0.1012,0.04772,1897,5,
+animal_protein_7,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-14.55,-25.07,-4.033,0.006696,1897,5,
+animal_protein_7,school-level permutation of area labels (trend),trend per area step,0.7495,,,0.06667,1897,5,30
+milk_daily,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-4.097,-12.61,4.419,0.3457,1897,5,
+milk_daily,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-8.841,-17.7,0.01435,0.05037,1897,5,
+milk_daily,school-level permutation of area labels (trend),trend per area step,0.7661,,,0.06667,1897,5,30
+ssb_daily,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,-4.033,-11.54,3.479,0.2927,1897,5,
+ssb_daily,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,-8.47,-16.15,-0.7908,0.03063,1897,5,
+ssb_daily,school-level permutation of area labels (trend),trend per area step,0.7204,,,0.03333,1897,5,30
+banana_3,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,6.63,-2.529,15.79,0.156,1897,5,
+banana_3,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,8.161,-2.122,18.45,0.1198,1897,5,
+banana_3,school-level permutation of area labels (trend),trend per area step,1.228,,,0.1333,1897,5,30
+orange_3,"linear mixed model, random school intercept (risk difference, %-points)",suburban vs urban,12.17,2.99,21.34,0.009361,1897,5,
+orange_3,"linear mixed model, random school intercept (risk difference, %-points)",rural vs urban,11.04,1.488,20.59,0.02349,1897,5,
+orange_3,school-level permutation of area labels (trend),trend per area step,1.316,,,0.2333,1897,5,30

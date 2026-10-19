@@ -35,3 +35,9 @@ Tidak ada koreksi FDR tambahan (13 luaran, sensitivitas). Semua hasil dilaporkan
 ## Keluaran
 `hasil/tables/table11_school_cluster_sensitivity.csv`: outcome, model, contrast, estimate, ci_low, ci_high, p, n_students,
 n_schools, n_permutations. Tabel agregat saja; tidak ada baris per siswa.
+
+## Pelaksanaan (19 Okt 2026)
+Dijalankan oleh Claude di sesi hub atas permintaan penulis, pada data bersih yang dibangun ulang dari ekspor Google Form
+mentah dengan `clean.py` (di folder sementara di luar git; data per siswa tidak disimpan di repo). Reproduksi: log pembersihan,
+22 tabel hasil, dan `key_numbers.json` identik dengan kiriman 7771e2d. Hasil: `hasil/tables/table11_school_cluster_sensitivity.csv`
+(n = 1.897; responden SMPN 2 Kuta dikeluarkan sesuai rencana).
