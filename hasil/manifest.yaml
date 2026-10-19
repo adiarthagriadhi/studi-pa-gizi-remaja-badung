@@ -12,3 +12,11 @@ targets:
     context: [dokumen/protokol.md, dokumen/pertanyaan-penelitian.md, dokumen/metode-analisis.md, dokumen/ringkasan-hasil.md,
               kode/clean.py, kode/stats_utils.py, kode/analysis.py, kode/make_tables.py, kode/make_figures.py, kode/SHA256SUMS,
               labels.yaml]
+  - article: 2026-dib-adolescent-pa-diet-dataset
+    files:
+      - from: e2/e2_key_numbers.json
+        to: data/
+      - from: e2/e2_data_dictionary.csv
+        to: data/tables/
+      - from: e2/e2_risk_report.md
+        to: data/

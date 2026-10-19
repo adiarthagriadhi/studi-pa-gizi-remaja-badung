@@ -10,7 +10,7 @@ Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-jpah-adolescen
 ## Isi
 | Folder | Isi |
 |---|---|
-| `kode/` | `clean.py` → `analysis.py` → `make_tables.py` → `make_figures.py` (+ `stats_utils.py`); `sensitivity_school.py` = sensitivitas pengelompokan sekolah (rencana dikunci di `dokumen/rencana-sensitivitas-klaster.md`). `SHA256SUMS` adalah sidik jari versi sesi analisis 19 Okt 2026; `make_figures.py` sesudahnya diubah (jalur ke `hasil/`, label "Suburban") |
+| `kode/` | `clean.py` → `analysis.py` → `make_tables.py` → `make_figures.py` (+ `stats_utils.py`); `sensitivity_school.py` = sensitivitas pengelompokan sekolah; `deidentify.py` = dataset terbuka E2 (desain B, k ≥ 5; keluaran per siswa hanya di komputer penulis/sesi, agregat di `hasil/e2/`) (rencana dikunci di `dokumen/rencana-sensitivitas-klaster.md`). `SHA256SUMS` adalah sidik jari versi sesi analisis 19 Okt 2026; `make_figures.py` sesudahnya diubah (jalur ke `hasil/`, label "Suburban") |
 | `dokumen/` | protokol, pertanyaan penelitian, metode analisis, ringkasan hasil (dari sesi analisis) |
 | `hasil/tables/` | tabel agregat + `key_numbers.json` (tanpa baris per siswa) |
 | `hasil/figures/` | Gambar 1–3 (PNG 300 dpi + PDF) |
