@@ -1,0 +1,13 @@
+analysis,model,contrast,beta,ci_low,ci_high,p,p_trend,icc_school
+primary (double-ticked cells missing),"OLS, HC3 robust SE",transitional vs urban,0.0238,-0.0365,0.084,0.44,0.0816,
+primary (double-ticked cells missing),"linear mixed model, random school intercept",transitional vs urban,0.0302,-0.134,0.1943,0.719,,0.0
+primary (double-ticked cells missing),"OLS, HC3 robust SE",rural vs urban,-0.06,-0.1229,0.0028,0.0609,0.0816,
+primary (double-ticked cells missing),"linear mixed model, random school intercept",rural vs urban,-0.056,-0.2237,0.1118,0.513,,0.0
+sensitivity: double-ticked = mean of ticks,"OLS, HC3 robust SE",transitional vs urban,0.0233,-0.037,0.0835,0.449,0.0734,
+sensitivity: double-ticked = mean of ticks,"linear mixed model, random school intercept",transitional vs urban,0.0296,-0.1339,0.1932,0.722,,0.0
+sensitivity: double-ticked = mean of ticks,"OLS, HC3 robust SE",rural vs urban,-0.0616,-0.1244,0.0012,0.0544,0.0734,
+sensitivity: double-ticked = mean of ticks,"linear mixed model, random school intercept",rural vs urban,-0.0576,-0.2247,0.1096,0.5,,0.0
+sensitivity: without PE item,"OLS, HC3 robust SE",transitional vs urban,0.0291,-0.0347,0.0928,0.371,0.133,
+sensitivity: without PE item,"linear mixed model, random school intercept",transitional vs urban,0.0341,-0.1038,0.1719,0.628,,0.0046
+sensitivity: without PE item,"OLS, HC3 robust SE",rural vs urban,-0.0548,-0.1204,0.0108,0.102,0.133,
+sensitivity: without PE item,"linear mixed model, random school intercept",rural vs urban,-0.0522,-0.1944,0.09,0.471,,0.0046

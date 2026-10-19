@@ -1,0 +1,20 @@
+step,decision,n
+Data mentah,Jumlah respons,1977
+Duplikat,Siswa yang mengisi >1 kali (nama+sekolah+kelas sama),79
+Duplikat,Baris duplikat dibuang (dipertahankan pengisian pertama),79
+Antropometri,"TB ditulis dalam meter, dikali 100",2
+Antropometri,TB di luar 120-195 cm atau tidak terbaca -> missing,11
+Antropometri,BB di luar 20-120 kg atau tidak terbaca -> missing,13
+Antropometri,IMT/U |z|>5 (flag WHO) -> missing,1
+Sosiodemografi,Jumlah anggota keluarga tidak terbaca/di luar 2-20 -> missing,11
+Sosiodemografi,"Pendidikan orang tua tidak dapat dikode (mis. 'baik', 'tidak tahu') -> missing",133
+Sosiodemografi,Pekerjaan orang tua tidak dapat dikode -> missing,22
+Aktivitas fisik,Responden dengan >=1 sel ganda di grid aktivitas waktu luang,271
+Aktivitas fisik,Sel grid dengan centang ganda -> missing (analisis utama),394
+Hambatan,Jawaban 'lainnya' (teks bebas) yang dikode ulang ke kategori,99
+Hambatan,Jawaban 'lainnya' = tidak ada hambatan,76
+FFQ,Porsi ikan 'Option 2' dikode sebagai '2 potong' (dikonfirmasi peneliti),190
+FFQ,Frekuensi > 0 tetapi porsi 'TIDAK PERNAH' -> porsi diisi modus item,145
+FFQ,Frekuensi 'tidak pernah' -> asupan 0 meskipun porsi terisi,286
+FFQ,Item 'makanan lain' (teks bebas) tidak dianalisis,1898
+Data bersih,Jumlah siswa unik dianalisis,1898

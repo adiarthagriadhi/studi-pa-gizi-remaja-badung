@@ -1,0 +1,4 @@
+area,mean,sd,median,p_kruskal,epsilon_squared
+urban,4.7787,2.1962,5.0,8.73e-05,0.0099
+transitional,5.2546,2.2627,5.0,8.73e-05,0.0099
+rural,5.1855,2.1983,5.0,8.73e-05,0.0099

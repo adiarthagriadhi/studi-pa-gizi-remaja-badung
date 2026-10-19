@@ -1,0 +1,14 @@
+targets:
+  - article: 2026-tbd-adolescent-pa-diet-urbanicity
+    files:
+      - from: tables/*.csv
+        to: data/tables/
+      - from: tables/key_numbers.json
+        to: data/
+      - from: figures/fig*.png
+        to: manuscript/figures/
+      - from: figures/fig*.pdf
+        to: manuscript/figures/
+    context: [dokumen/protokol.md, dokumen/pertanyaan-penelitian.md, dokumen/metode-analisis.md, dokumen/ringkasan-hasil.md,
+              kode/clean.py, kode/stats_utils.py, kode/analysis.py, kode/make_tables.py, kode/make_figures.py, kode/SHA256SUMS,
+              labels.yaml]

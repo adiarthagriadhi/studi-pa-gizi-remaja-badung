@@ -1,0 +1,13 @@
+measure,statistic,value,n_pairs
+paqc_composite,"ICC(2,1) absolute agreement",0.7479,79
+paqc_item_pe_lessons,quadratic weighted kappa,0.6998,79
+paqc_item_school_outside_pe,quadratic weighted kappa,0.5517,79
+paqc_item_after_school,quadratic weighted kappa,0.5689,79
+paqc_item_evenings,quadratic weighted kappa,0.5144,79
+paqc_item_weekend,quadratic weighted kappa,0.64,79
+paqc_item_sweating_hard_breathing,quadratic weighted kappa,0.3887,79
+paqc_item_overall_description,quadratic weighted kappa,0.5984,79
+ffq_frequency_items_median,quadratic weighted kappa (median of 19 items),0.5847,79
+ffq_frequency_items_min,quadratic weighted kappa (minimum of 19 items),0.3732,79
+ffq_frequency_items_max,quadratic weighted kappa (maximum of 19 items),0.7236,79
+interval_days_median,median days between the two submissions,4.6183,79

@@ -1,0 +1,62 @@
+variable,level,statistic,urban,transitional,rural,total
+n,,n,628.0,758.0,512.0,1898.0
+sex,Boys,n,281.0,310.0,239.0,830.0
+sex,Boys,pct,44.7452,40.8971,46.6797,43.7302
+sex,Girls,n,347.0,448.0,273.0,1068.0
+sex,Girls,pct,55.2548,59.1029,53.3203,56.2698
+sex,(valid n),n,628.0,758.0,512.0,1898.0
+grade,7,n,167.0,282.0,193.0,642.0
+grade,7,pct,26.5924,37.2032,37.6953,33.8251
+grade,8,n,245.0,281.0,170.0,696.0
+grade,8,pct,39.0127,37.0712,33.2031,36.6702
+grade,9,n,216.0,195.0,149.0,560.0
+grade,9,pct,34.3949,25.7256,29.1016,29.5047
+grade,(valid n),n,628.0,758.0,512.0,1898.0
+bmi_for_age_category,Severe thinness,n,7.0,18.0,8.0,33.0
+bmi_for_age_category,Severe thinness,pct,1.12,2.4,1.5936,1.7581
+bmi_for_age_category,Thinness,n,26.0,37.0,16.0,79.0
+bmi_for_age_category,Thinness,pct,4.16,4.9333,3.1873,4.2088
+bmi_for_age_category,Normal,n,387.0,515.0,354.0,1256.0
+bmi_for_age_category,Normal,pct,61.92,68.6667,70.5179,66.9153
+bmi_for_age_category,Overweight,n,131.0,130.0,87.0,348.0
+bmi_for_age_category,Overweight,pct,20.96,17.3333,17.3307,18.5402
+bmi_for_age_category,Obesity,n,74.0,50.0,37.0,161.0
+bmi_for_age_category,Obesity,pct,11.84,6.6667,7.3705,8.5775
+bmi_for_age_category,(valid n),n,625.0,750.0,502.0,1877.0
+highest_parental_education,Primary or less,n,25.0,43.0,33.0,101.0
+highest_parental_education,Primary or less,pct,4.2373,6.2865,6.721,5.7224
+highest_parental_education,Junior secondary,n,34.0,77.0,71.0,182.0
+highest_parental_education,Junior secondary,pct,5.7627,11.2573,14.4603,10.3116
+highest_parental_education,Senior secondary,n,312.0,396.0,310.0,1018.0
+highest_parental_education,Senior secondary,pct,52.8814,57.8947,63.1365,57.6771
+highest_parental_education,Tertiary,n,219.0,168.0,77.0,464.0
+highest_parental_education,Tertiary,pct,37.1186,24.5614,15.6823,26.289
+highest_parental_education,(valid n),n,590.0,684.0,491.0,1765.0
+highest_parental_occupation,Civil servant/military/police/professional,n,70.0,97.0,53.0,220.0
+highest_parental_occupation,Civil servant/military/police/professional,pct,11.3269,12.9333,10.4331,11.7271
+highest_parental_occupation,Private employee,n,273.0,306.0,145.0,724.0
+highest_parental_occupation,Private employee,pct,44.1748,40.8,28.5433,38.5928
+highest_parental_occupation,Self-employed/trader,n,225.0,202.0,135.0,562.0
+highest_parental_occupation,Self-employed/trader,pct,36.4078,26.9333,26.5748,29.9574
+highest_parental_occupation,Farmer/livestock/fisher,n,3.0,64.0,122.0,189.0
+highest_parental_occupation,Farmer/livestock/fisher,pct,0.4854,8.5333,24.0157,10.0746
+highest_parental_occupation,Labourer/informal worker,n,22.0,53.0,40.0,115.0
+highest_parental_occupation,Labourer/informal worker,pct,3.5599,7.0667,7.874,6.1301
+highest_parental_occupation,Not working/homemaker/retired,n,25.0,28.0,13.0,66.0
+highest_parental_occupation,Not working/homemaker/retired,pct,4.0453,3.7333,2.5591,3.5181
+highest_parental_occupation,(valid n),n,618.0,750.0,508.0,1876.0
+height_cm,,mean,157.7045,156.497,155.9278,156.744
+height_cm,,sd,7.8181,7.8868,8.5188,8.0666
+height_cm,(valid n),n,625.0,755.0,507.0,1887.0
+weight_kg,,mean,52.7159,48.9608,49.054,50.2368
+weight_kg,,sd,13.2181,11.6769,11.379,12.2562
+weight_kg,(valid n),n,628.0,753.0,504.0,1885.0
+bmi_kg_m2,,mean,21.0608,19.8813,20.0411,20.3168
+bmi_kg_m2,,sd,4.5813,3.9418,3.7754,4.1559
+bmi_kg_m2,(valid n),n,625.0,750.0,502.0,1877.0
+bmi_for_age_z,,mean,0.3021,-0.0298,0.0602,0.1048
+bmi_for_age_z,,sd,1.4189,1.3738,1.307,1.3784
+bmi_for_age_z,(valid n),n,625.0,750.0,502.0,1877.0
+household_size,,mean,4.7544,4.7987,4.8448,4.7965
+household_size,,sd,1.2145,1.2432,1.2695,1.2408
+household_size,(valid n),n,623.0,755.0,509.0,1887.0

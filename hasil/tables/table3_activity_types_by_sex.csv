@@ -1,0 +1,21 @@
+activity,sex,urban_pct_weekly,transitional_pct_weekly,rural_pct_weekly
+Walking,Boys,80.8118,68.3333,58.7983
+Walking,Girls,79.2169,74.8268,60.6061
+Running/jogging,Boys,89.1697,90.099,87.234
+Running/jogging,Girls,88.3929,89.4495,92.5373
+Football,Boys,65.6827,70.3333,70.5128
+Football,Girls,15.896,20.362,24.0741
+Volleyball,Boys,24.7312,51.8033,46.3519
+Volleyball,Girls,21.7391,43.0839,37.3585
+Basketball,Boys,32.0285,33.0065,36.9099
+Basketball,Girls,30.2326,39.1011,50.3731
+Swimming,Boys,49.8182,39.4737,35.0427
+Swimming,Girls,47.093,37.3303,32.7138
+Gymnastics/aerobics,Boys,42.446,56.7657,68.8312
+Gymnastics/aerobics,Girls,61.8768,76.3636,77.9026
+Pencak silat,Boys,11.7857,20.5212,21.8884
+Pencak silat,Girls,9.2486,10.1351,10.7407
+Cycling,Boys,68.8406,79.2642,73.3906
+Cycling,Girls,62.908,70.1357,64.5522
+Other,Boys,54.1667,63.3333,62.7706
+Other,Girls,49.8498,53.1323,52.6119

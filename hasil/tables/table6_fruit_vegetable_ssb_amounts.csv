@@ -1,0 +1,5 @@
+variable,urban_q1,urban_median,urban_q3,transitional_q1,transitional_median,transitional_q3,rural_q1,rural_median,rural_q3,total_q1,total_median,total_q3,p_kruskal,epsilon_squared
+Vegetable servings/day,0.214,0.533,1.2222,0.28,0.607,1.214,0.28,0.634,1.281,0.247,0.6,1.247,0.0676,0.0028
+Fruit servings/day,0.3005,0.7225,1.5339,0.428,0.8912,1.6432,0.4372,0.749,1.687,0.3815,0.749,1.634,0.000479,0.0081
+Fruit + vegetable servings/day,0.7054,1.4222,2.9389,0.8785,1.6298,3.0951,0.9234,1.7098,3.1441,0.8451,1.57,3.0209,0.00745,0.0052
+Sweetened drinks + soda (ml/day),38.19,73.47,190.62,25.68,73.47,142.11,38.19,73.47,130.6875,38.19,73.47,142.11,0.000975,0.0073

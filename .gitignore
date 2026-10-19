@@ -1,0 +1,7 @@
+# Data siswa (nama, email, alamat) tidak pernah masuk git
+data/
+*.xlsx
+*.xls
+*.pkl
+*.sav
+__pycache__/

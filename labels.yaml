@@ -1,0 +1,6 @@
+# Kunci kode -> label tampilan (aturan riset §1.9). Kunci kolom tabel tetap "transitional";
+# label di naskah dan gambar mengikuti judul protokol etik ("suburban"), keputusan penulis 19 Okt 2026.
+area:
+  urban: Urban
+  transitional: Suburban
+  rural: Rural

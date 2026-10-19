@@ -1,0 +1,5 @@
+barrier,beta_paqc_composite,ci_low,ci_high,p
+"No time (study, tutoring, homework)",-0.0708,-0.1246,-0.017,0.00991
+No facilities,-0.1115,-0.1641,-0.059,3.15e-05
+Illness or injury,0.2003,0.1394,0.2612,1.17e-10
+Dislike of sport,-0.4074,-0.4747,-0.3402,1.73e-32

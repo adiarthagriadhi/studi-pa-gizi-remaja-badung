@@ -1,0 +1,4 @@
+pattern,pct_variance_explained,urban_mean,urban_sd,transitional_mean,transitional_sd,rural_mean,rural_sd,p_kruskal,epsilon_squared,beta_transitional,ci_low_transitional,ci_high_transitional,beta_rural,ci_low_rural,ci_high_rural,p_adjusted_global,p_trend
+Pattern 1: plant protein-vegetables-fruit,18.7361,-0.0619,1.0429,0.0122,0.9828,0.0579,0.9699,0.00198,0.0066,0.0691,-0.0396,0.1778,0.1157,-0.0012,0.2325,0.147,0.0508
+Pattern 2: snacks-sweetened drinks,14.5869,0.0464,1.0199,-0.0029,1.0336,-0.0525,0.9219,0.245,0.0015,-0.0591,-0.1673,0.049,-0.1095,-0.2216,0.0026,0.159,0.0551
+Pattern 3: rice-chicken-sambal,7.3892,0.0115,1.0341,0.0242,1.0053,-0.05,0.9494,0.452,0.0008,0.0224,-0.0861,0.1309,-0.0517,-0.1673,0.0639,0.405,0.416

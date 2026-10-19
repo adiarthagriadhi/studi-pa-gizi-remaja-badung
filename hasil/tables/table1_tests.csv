@@ -1,0 +1,11 @@
+variable,test,statistic,df,p,effect_size_type,effect_size
+sex,chi-square,4.5456,2,0.103,cramers_v,0.0489
+grade,chi-square,25.9756,4,3.2e-05,cramers_v,0.0827
+bmi_for_age_category,chi-square,23.8743,8,0.00241,cramers_v,0.0797
+highest_parental_education,chi-square,77.1439,6,1.39e-14,cramers_v,0.1478
+highest_parental_occupation,chi-square,202.127,10,5.81e-38,cramers_v,0.2321
+height_cm,kruskal-wallis,11.3641,2,0.00341,epsilon_squared,0.006
+weight_kg,kruskal-wallis,33.0789,2,6.56e-08,epsilon_squared,0.0176
+bmi_kg_m2,kruskal-wallis,25.1053,2,3.54e-06,epsilon_squared,0.0134
+bmi_for_age_z,kruskal-wallis,20.532,2,3.48e-05,epsilon_squared,0.0109
+household_size,kruskal-wallis,0.9531,2,0.621,epsilon_squared,0.0005

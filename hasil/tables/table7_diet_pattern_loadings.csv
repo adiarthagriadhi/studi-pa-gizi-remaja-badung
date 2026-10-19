@@ -1,0 +1,20 @@
+food,pattern1_plant_protein_veg_fruit,pattern2_snacks_sweet_drinks,pattern3_rice_chicken_sambal
+Rice,-0.06,-0.14,0.7
+Instant noodles,0.03,0.55,-0.21
+Tempeh,0.59,0.12,0.11
+Tofu,0.62,0.11,0.05
+Chicken,0.26,0.21,0.45
+Fish,0.48,0.27,-0.04
+Egg,0.46,0.3,0.21
+Vegetables (cabbage/carrot),0.59,-0.09,0.29
+Spinach,0.7,0.05,-0.09
+Water spinach,0.63,0.23,-0.01
+Chilli sauce (sambal),0.23,0.35,0.44
+Banana,0.54,0.18,0.14
+Mango,0.54,0.38,-0.02
+Orange,0.5,0.32,0.11
+Sweetened drinks (tea/syrup),0.07,0.71,0.13
+Soft drinks (soda),0.17,0.67,-0.14
+Milk,0.28,0.38,0.31
+Fried snacks (gorengan),0.27,0.59,-0.08
+Packaged snacks,0.08,0.56,0.37

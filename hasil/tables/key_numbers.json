@@ -1,0 +1,37 @@
+{
+  "n_responses_raw": 1977,
+  "n_duplicate_rows_removed": 79,
+  "n_students": 1898,
+  "n_by_area": {
+    "urban": 628,
+    "transitional": 758,
+    "rural": 512
+  },
+  "n_girls": 1068,
+  "n_boys": 830,
+  "n_schools": 5,
+  "data_collection": "2025-09-17 to 2025-10-02",
+  "paqc_cronbach_alpha_8_items": 0.7140128041285977,
+  "paqc_cronbach_alpha_7_items": 0.747413485113463,
+  "paqc_composite_mean_by_area": {
+    "urban": 2.442731713173592,
+    "transitional": 2.4647831857017213,
+    "rural": 2.394477093408978
+  },
+  "paqc_beta_girls_vs_boys": {
+    "beta": -0.24585894441231315,
+    "ci_low": -0.2964433230015578,
+    "ci_high": -0.1952745658230685,
+    "p": 1.6321529084381538e-21
+  },
+  "paqc_area_by_sex_interaction_p": 0.3299590188530309,
+  "paqc_category_chi2_p": 0.16038120659511926,
+  "paqc_category_cramers_v": 0.04160517679513237,
+  "n_double_ticked_respondents": 271,
+  "bmi_for_age_valid_n": 1877,
+  "diet_pattern_total_variance_pct": 40.71217967027753,
+  "fruit_veg_5plus_total_pct": 12.697576396206534,
+  "fruit_veg_servings_median_total": 1.5699999999999998,
+  "barrier_time_total_pct": 57.692307692307686,
+  "test_retest_pairs": 79
+}
