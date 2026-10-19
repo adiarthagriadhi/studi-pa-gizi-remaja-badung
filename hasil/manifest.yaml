@@ -1,5 +1,5 @@
 targets:
-  - article: 2026-tbd-adolescent-pa-diet-urbanicity
+  - article: 2026-jpah-adolescent-pa-types-barriers
     files:
       - from: tables/*.csv
         to: data/tables/

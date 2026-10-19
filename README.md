@@ -5,12 +5,12 @@ urban (Kuta), suburban (Abiansemal) dan rural (Petang), Kabupaten Badung, Bali. 
 1.898 siswa unik dari 1.977 respons. Protokol etik: Komisi Etik Penelitian FK Unud No. 2614/UN14.2.2.VII.14/LT/2025
 (protokol 2025.02.1.1185): persetujuan awal 8 Sep 2025, amandemen bernomor sama 22 Okt 2025.
 
-Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-tbd-adolescent-pa-diet-urbanicity` (kode portofolio E1).
+Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-jpah-adolescent-pa-types-barriers` (kode portofolio E1).
 
 ## Isi
 | Folder | Isi |
 |---|---|
-| `kode/` | `clean.py` → `analysis.py` → `make_tables.py` → `make_figures.py` (+ `stats_utils.py`). `SHA256SUMS` adalah sidik jari versi sesi analisis 19 Okt 2026; `make_figures.py` sesudahnya diubah (jalur ke `hasil/`, label "Suburban") |
+| `kode/` | `clean.py` → `analysis.py` → `make_tables.py` → `make_figures.py` (+ `stats_utils.py`); `sensitivity_school.py` = sensitivitas pengelompokan sekolah (rencana dikunci di `dokumen/rencana-sensitivitas-klaster.md`). `SHA256SUMS` adalah sidik jari versi sesi analisis 19 Okt 2026; `make_figures.py` sesudahnya diubah (jalur ke `hasil/`, label "Suburban") |
 | `dokumen/` | protokol, pertanyaan penelitian, metode analisis, ringkasan hasil (dari sesi analisis) |
 | `hasil/tables/` | tabel agregat + `key_numbers.json` (tanpa baris per siswa) |
 | `hasil/figures/` | Gambar 1–3 (PNG 300 dpi + PDF) |
