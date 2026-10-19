@@ -5,78 +5,78 @@ sex,Sex,"boy, girl",0
 grade,School grade,"7, 8, 9",0
 bmi_for_age_cat,"BMI-for-age category (WHO 2007, self-reported height and weight, age approximated from grade)","thinness, normal, overweight, obesity; missing = not available or suppressed",33
 parental_education,Highest parental education mentioned,"primary_or_less, junior_secondary, senior_secondary, tertiary; missing = not codable or suppressed",293
-pa1_walking,Leisure-time activity in past 7 days: walking,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",65
-pa1_walking_multi_tick,More than one frequency ticked for walking (cell set to missing in pa1_walking),"0 = no, 1 = yes",0
-pa1_running,Leisure-time activity in past 7 days: running,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",43
-pa1_running_multi_tick,More than one frequency ticked for running (cell set to missing in pa1_running),"0 = no, 1 = yes",0
-pa1_football,Leisure-time activity in past 7 days: football,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",35
-pa1_football_multi_tick,More than one frequency ticked for football (cell set to missing in pa1_football),"0 = no, 1 = yes",0
-pa1_volleyball,Leisure-time activity in past 7 days: volleyball,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",30
-pa1_volleyball_multi_tick,More than one frequency ticked for volleyball (cell set to missing in pa1_volleyball),"0 = no, 1 = yes",0
-pa1_basketball,Leisure-time activity in past 7 days: basketball,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",21
-pa1_basketball_multi_tick,More than one frequency ticked for basketball (cell set to missing in pa1_basketball),"0 = no, 1 = yes",0
-pa1_swimming,Leisure-time activity in past 7 days: swimming,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",30
-pa1_swimming_multi_tick,More than one frequency ticked for swimming (cell set to missing in pa1_swimming),"0 = no, 1 = yes",0
-pa1_gymnastics_aerobics,Leisure-time activity in past 7 days: gymnastics_aerobics,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",38
-pa1_gymnastics_aerobics_multi_tick,More than one frequency ticked for gymnastics_aerobics (cell set to missing in pa1_gymnastics_aerobics),"0 = no, 1 = yes",0
-pa1_pencak_silat,Leisure-time activity in past 7 days: pencak_silat,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",18
-pa1_pencak_silat_multi_tick,More than one frequency ticked for pencak_silat (cell set to missing in pa1_pencak_silat),"0 = no, 1 = yes",0
-pa1_cycling,Leisure-time activity in past 7 days: cycling,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",43
-pa1_cycling_multi_tick,More than one frequency ticked for cycling (cell set to missing in pa1_cycling),"0 = no, 1 = yes",0
-pa1_other,Leisure-time activity in past 7 days: other,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",71
-pa1_other_multi_tick,More than one frequency ticked for other (cell set to missing in pa1_other),"0 = no, 1 = yes",0
-pa_pe_lessons,PAQ-A-based item,"PE lessons attended in past 7 days: 1 = none, 2 = once, 3 = twice, 4 = three times, 5 = four times or more",0
-pa_school_outside_pe,PAQ-A-based item,"Activity at school outside PE: 1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",0
-pa_after_school,PAQ-A-based item,Activity right after school: same codes as school_outside_pe,0
-pa_evenings,PAQ-A-based item,Activity in the evenings: same codes as school_outside_pe,0
-pa_weekend,PAQ-A-based item,"Activity at the weekend: 1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",0
-pa_sweat_hard_breathing,PAQ-A-based item,Activities causing sweating or hard breathing: same codes as weekend,0
-pa_week_description,PAQ-A-based item,"Description of past 7 days: 1 = no activity, 2 = light, 3 = moderate, 4 = vigorous, 5 = very vigorous",0
-barrier_no_time,Barrier to physical activity in past 7 days: no_time,"0 = not reported, 1 = reported",0
-barrier_no_facilities,Barrier to physical activity in past 7 days: no_facilities,"0 = not reported, 1 = reported",0
-barrier_illness_injury,Barrier to physical activity in past 7 days: illness_injury,"0 = not reported, 1 = reported",0
-barrier_dislike_sport,Barrier to physical activity in past 7 days: dislike_sport,"0 = not reported, 1 = reported",0
-barrier_other_weather,Barrier to physical activity in past 7 days: other_weather,"0 = not reported, 1 = reported",0
-barrier_other_tired_low_motivation,Barrier to physical activity in past 7 days: other_tired_low_motivation,"0 = not reported, 1 = reported",0
-barrier_other_no_companion,Barrier to physical activity in past 7 days: other_no_companion,"0 = not reported, 1 = reported",0
-barrier_other_family_customary_religious_arts,Barrier to physical activity in past 7 days: other_family_customary_religious_arts,"0 = not reported, 1 = reported",0
-barrier_other_uncoded,Barrier to physical activity in past 7 days: other_uncoded,"0 = not reported, 1 = reported",0
-barrier_no_barrier_written,Barrier to physical activity in past 7 days: no_barrier_written,"0 = not reported, 1 = reported",0
-ffq_rice_freq,"Consumption frequency, past month: rice","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_rice_portion,Usual portion of rice in household-measure units (0 when never eaten),numeric,0
-ffq_instant_noodles_freq,"Consumption frequency, past month: instant_noodles","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_instant_noodles_portion,Usual portion of instant_noodles in household-measure units (0 when never eaten),numeric,0
-ffq_tempeh_freq,"Consumption frequency, past month: tempeh","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_tempeh_portion,Usual portion of tempeh in household-measure units (0 when never eaten),numeric,0
-ffq_tofu_freq,"Consumption frequency, past month: tofu","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_tofu_portion,Usual portion of tofu in household-measure units (0 when never eaten),numeric,0
-ffq_chicken_freq,"Consumption frequency, past month: chicken","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_chicken_portion,Usual portion of chicken in household-measure units (0 when never eaten),numeric,0
-ffq_fish_freq,"Consumption frequency, past month: fish","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_fish_portion,Usual portion of fish in household-measure units (0 when never eaten),numeric,0
-ffq_egg_freq,"Consumption frequency, past month: egg","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_egg_portion,Usual portion of egg in household-measure units (0 when never eaten),numeric,0
-ffq_vegetables_cabbage_carrot_freq,"Consumption frequency, past month: vegetables_cabbage_carrot","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_vegetables_cabbage_carrot_portion,Usual portion of vegetables_cabbage_carrot in household-measure units (0 when never eaten),numeric,0
-ffq_spinach_freq,"Consumption frequency, past month: spinach","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_spinach_portion,Usual portion of spinach in household-measure units (0 when never eaten),numeric,0
-ffq_water_spinach_freq,"Consumption frequency, past month: water_spinach","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_water_spinach_portion,Usual portion of water_spinach in household-measure units (0 when never eaten),numeric,0
-ffq_chilli_sauce_freq,"Consumption frequency, past month: chilli_sauce","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_chilli_sauce_portion,Usual portion of chilli_sauce in household-measure units (0 when never eaten),numeric,0
-ffq_banana_freq,"Consumption frequency, past month: banana","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_banana_portion,Usual portion of banana in household-measure units (0 when never eaten),numeric,0
-ffq_mango_freq,"Consumption frequency, past month: mango","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_mango_portion,Usual portion of mango in household-measure units (0 when never eaten),numeric,0
-ffq_orange_freq,"Consumption frequency, past month: orange","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_orange_portion,Usual portion of orange in household-measure units (0 when never eaten),numeric,0
-ffq_sweetened_drinks_freq,"Consumption frequency, past month: sweetened_drinks","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_sweetened_drinks_portion,Usual portion of sweetened_drinks in household-measure units (0 when never eaten),numeric,0
-ffq_soft_drinks_freq,"Consumption frequency, past month: soft_drinks","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_soft_drinks_portion,Usual portion of soft_drinks in household-measure units (0 when never eaten),numeric,0
-ffq_milk_freq,"Consumption frequency, past month: milk","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_milk_portion,Usual portion of milk in household-measure units (0 when never eaten),numeric,0
-ffq_fried_snacks_freq,"Consumption frequency, past month: fried_snacks","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_fried_snacks_portion,Usual portion of fried_snacks in household-measure units (0 when never eaten),numeric,0
-ffq_packaged_snacks_freq,"Consumption frequency, past month: packaged_snacks","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
-ffq_packaged_snacks_portion,Usual portion of packaged_snacks in household-measure units (0 when never eaten),numeric,0
+pa1_walking,Leisure-time activity in past 7 days (item 1): walking,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",65
+pa1_walking_multi_tick,More than one frequency ticked for walking (item 1; pa1_walking set to missing),"0 = no, 1 = yes",0
+pa1_running,Leisure-time activity in past 7 days (item 1): running or jogging,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",43
+pa1_running_multi_tick,More than one frequency ticked for running or jogging (item 1; pa1_running set to missing),"0 = no, 1 = yes",0
+pa1_football,Leisure-time activity in past 7 days (item 1): football,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",35
+pa1_football_multi_tick,More than one frequency ticked for football (item 1; pa1_football set to missing),"0 = no, 1 = yes",0
+pa1_volleyball,Leisure-time activity in past 7 days (item 1): volleyball,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",30
+pa1_volleyball_multi_tick,More than one frequency ticked for volleyball (item 1; pa1_volleyball set to missing),"0 = no, 1 = yes",0
+pa1_basketball,Leisure-time activity in past 7 days (item 1): basketball,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",21
+pa1_basketball_multi_tick,More than one frequency ticked for basketball (item 1; pa1_basketball set to missing),"0 = no, 1 = yes",0
+pa1_swimming,Leisure-time activity in past 7 days (item 1): swimming,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",30
+pa1_swimming_multi_tick,More than one frequency ticked for swimming (item 1; pa1_swimming set to missing),"0 = no, 1 = yes",0
+pa1_gymnastics_aerobics,Leisure-time activity in past 7 days (item 1): gymnastics or aerobics,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",38
+pa1_gymnastics_aerobics_multi_tick,More than one frequency ticked for gymnastics or aerobics (item 1; pa1_gymnastics_aerobics set to missing),"0 = no, 1 = yes",0
+pa1_pencak_silat,Leisure-time activity in past 7 days (item 1): pencak silat,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",18
+pa1_pencak_silat_multi_tick,More than one frequency ticked for pencak silat (item 1; pa1_pencak_silat set to missing),"0 = no, 1 = yes",0
+pa1_cycling,Leisure-time activity in past 7 days (item 1): cycling,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",43
+pa1_cycling_multi_tick,More than one frequency ticked for cycling (item 1; pa1_cycling set to missing),"0 = no, 1 = yes",0
+pa1_other,Leisure-time activity in past 7 days (item 1): other activity,"1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days); missing = more than one frequency ticked",71
+pa1_other_multi_tick,More than one frequency ticked for other activity (item 1; pa1_other set to missing),"0 = no, 1 = yes",0
+pa_pe_lessons,PE lessons attended in past 7 days (item 2),"1 = none, 2 = once, 3 = twice, 4 = three times, 5 = four times or more",0
+pa_school_outside_pe,"Physical activity at school outside PE, past 7 days (item 3)","1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",0
+pa_after_school,"Physical activity right after school, past 7 days (item 4)","1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",0
+pa_evenings,"Physical activity in the evenings, past 7 days (item 5)","1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",0
+pa_weekend,Physical activity at the weekend (item 6),"1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",0
+pa_sweat_hard_breathing,"Activities causing sweating or hard breathing, past 7 days (item 7)","1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",0
+pa_week_description,Description of physical activity in past 7 days (item 8),"1 = no physical activity, 2 = light, 3 = moderate, 4 = vigorous, 5 = very vigorous",0
+barrier_no_time,"Barrier to physical activity in past 7 days (item 9): no time (study, tutoring, etc.)","0 = not reported, 1 = reported",0
+barrier_no_facilities,"Barrier to physical activity in past 7 days (item 9): no facilities (e.g. field, bicycle)","0 = not reported, 1 = reported",0
+barrier_illness_injury,Barrier to physical activity in past 7 days (item 9): illness or injury,"0 = not reported, 1 = reported",0
+barrier_dislike_sport,Barrier to physical activity in past 7 days (item 9): dislike of sport,"0 = not reported, 1 = reported",0
+barrier_other_weather,Barrier to physical activity in past 7 days (item 9): weather (recoded from 'other'),"0 = not reported, 1 = reported",0
+barrier_other_tired_low_motivation,Barrier to physical activity in past 7 days (item 9): tiredness or low motivation (recoded from 'other'),"0 = not reported, 1 = reported",0
+barrier_other_no_companion,Barrier to physical activity in past 7 days (item 9): no companion (recoded from 'other'),"0 = not reported, 1 = reported",0
+barrier_other_family_customary_religious_arts,"Barrier to physical activity in past 7 days (item 9): family, customary, religious or arts activities (recoded from 'other')","0 = not reported, 1 = reported",0
+barrier_other_uncoded,"Barrier to physical activity in past 7 days (item 9): other, not codable","0 = not reported, 1 = reported",0
+barrier_no_barrier_written,Barrier to physical activity in past 7 days (item 9): 'no barrier' written under 'other',"0 = not reported, 1 = reported",0
+ffq_rice_freq,Consumption frequency in past month: rice,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_rice_portion,"Usual portion of rice, in full plates (1/2 plate = 0.5, 1 small plate = 0.75, 1 full plate = 1)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_instant_noodles_freq,Consumption frequency in past month: instant noodles,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_instant_noodles_portion,"Usual portion of instant noodles, in packs (1/2 pack = 0.5, 1 pack = 1, 2 packs = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_tempeh_freq,Consumption frequency in past month: tempeh (fried or boiled),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_tempeh_portion,"Usual portion of tempeh (fried or boiled), in small pieces of 3 x 3 cm (1, 2 or 3 pieces)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_tofu_freq,Consumption frequency in past month: tofu,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_tofu_portion,"Usual portion of tofu, in medium pieces (1, 2 or 3 pieces)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_chicken_freq,Consumption frequency in past month: chicken (fried or grilled),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_chicken_portion,"Usual portion of chicken (fried or grilled), in medium pieces (1 small piece, wing = 0.5, 1 medium piece, breast or thigh = 1, 2 pieces = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_fish_freq,"Consumption frequency in past month: fish (catfish, milkfish, etc.)","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_fish_portion,"Usual portion of fish (catfish, milkfish, etc.), in pieces (1 small piece = 1, 2 pieces = 2, 3 pieces = 3)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_egg_freq,Consumption frequency in past month: egg (fried or boiled),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_egg_portion,"Usual portion of egg (fried or boiled), in eggs (1/2 egg = 0.5, 1 egg = 1, 2 eggs = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_vegetables_cabbage_carrot_freq,Consumption frequency in past month: vegetables (cabbage or carrot),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_vegetables_cabbage_carrot_portion,"Usual portion of vegetables (cabbage or carrot), in vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_spinach_freq,Consumption frequency in past month: spinach,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_spinach_portion,"Usual portion of spinach, in vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_water_spinach_freq,Consumption frequency in past month: water spinach,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_water_spinach_portion,"Usual portion of water spinach, in vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_chilli_sauce_freq,Consumption frequency in past month: chilli sauce (sambal),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_chilli_sauce_portion,"Usual portion of chilli sauce (sambal), in tablespoons (1 teaspoon = 0.333, 1 tablespoon = 1, 2 tablespoons = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_banana_freq,Consumption frequency in past month: banana,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_banana_portion,"Usual portion of banana, in fruits (1/2 fruit = 0.5, 1 fruit = 1, 2 fruits = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_mango_freq,Consumption frequency in past month: mango,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_mango_portion,"Usual portion of mango, in medium fruits (1/2 medium fruit = 0.5, 1 medium fruit = 1, 2 fruits = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_orange_freq,Consumption frequency in past month: orange,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_orange_portion,"Usual portion of orange, in medium fruits (1 small fruit = 0.75, 1 medium fruit = 1, 2 fruits = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_sweetened_drinks_freq,"Consumption frequency in past month: sweetened drinks (sweet tea, syrup)","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_sweetened_drinks_portion,"Usual portion of sweetened drinks (sweet tea, syrup), in glasses (1/2 glass = 0.5, 1 glass = 1, 2 glasses = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_soft_drinks_freq,Consumption frequency in past month: soft drinks,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_soft_drinks_portion,"Usual portion of soft drinks, in cans (1/2 can = 0.5, 1 can = 1, 2 cans = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_milk_freq,Consumption frequency in past month: milk (carton or liquid),"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_milk_portion,"Usual portion of milk (carton or liquid), in glasses (1/2 glass = 0.5, 1 glass = 1, 2 glasses = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_fried_snacks_freq,Consumption frequency in past month: fried snacks,"0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_fried_snacks_portion,"Usual portion of fried snacks, in pieces (1, 2 or 3 pieces)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0
+ffq_packaged_snacks_freq,"Consumption frequency in past month: packaged snacks (chips, sweets, etc.)","0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more",0
+ffq_packaged_snacks_portion,"Usual portion of packaged snacks (chips, sweets, etc.), in medium packs (1 small pack = 0.5, 1 medium pack = 1, 2 packs = 2)",numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion,0

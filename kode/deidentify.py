@@ -1,24 +1,27 @@
 """De-identify the E1/E2 student-level survey data for open sharing (Data in Brief, E2).
 
-PROPOSAL (19 Oct 2026) — to be moved to the research repo adiarthagriadhi/studi-pa-gizi-remaja-badung and approved by
-the author before use. Run it on the author's own computer only:
+Design B approved by the author (19 Oct 2026). Run it on the author's own computer only:
 
     python3 deidentify.py /path/to/clean.pkl /path/outside/any/git/repo/
+    python3 deidentify.py --dictionary /path/to/e2_dataset.csv /path/outside/any/git/repo/
+
+The second form rewrites only e2_data_dictionary.csv from an already released e2_dataset.csv (no raw data needed).
 
 Input : clean.pkl written by the research repo's clean.py (one row per student, Indonesian column names).
 Output: in OUT_DIR (refused if it lies inside a git working tree)
-    e2_dataset.csv          de-identified student-level data (to upload to Mendeley Data / Zenodo, never to GitHub)
-    e2_data_dictionary.csv  variable, label, type, codes
+    e2_dataset.csv          de-identified student-level data (to upload to Mendeley Data, never to GitHub)
+    e2_data_dictionary.csv  variable, label, codes, n_missing (aggregate; safe to send to the hub)
+    e2_key_numbers.json     aggregate counts (safe to send to the hub)
     e2_risk_report.md       aggregate re-identification risk report (counts only; safe to send to the hub)
 
-Rules (see review/deidentifikasi.md):
+Rules (see the hub's E2 review/deidentifikasi.md):
 - dropped: name, e-mail, address, timestamp/date, school, raw row number, internal id, all free text,
-  height, weight, BMI, BMI-for-age z, approximate age;
-- kept: area (urban/suburban/rural), sex, grade, BMI-for-age in 4 categories, parental education (4),
-  parental occupation (3 groups), household size (4 groups), all coded PAQ-C, barrier and FFQ answers;
+  height, weight, BMI, BMI-for-age z, approximate age, parental occupation, household size;
+- kept: area (urban/suburban/rural), sex, grade, BMI-for-age in 4 categories, parental education (4 levels),
+  all coded PAQ-A-based, barrier and FFQ answers;
 - rows shuffled and given new random ids not linked to any other file;
-- local suppression: quasi-identifier cells are set to missing, most detailed first, until every record shares its
-  combination of quasi-identifiers with at least K-1 others."""
+- local suppression: BMI-for-age and parental education cells are set to missing until every record is compatible
+  (suppressed cells match any value) with at least K-1 others."""
 import secrets
 import subprocess
 import sys
@@ -59,14 +62,58 @@ FOOD = {"nasi": "rice", "mie_instan": "instant_noodles", "tempe": "tempeh", "tah
 
 
 FREQ5 = "1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = 5-6 times, 5 = 7 times or more (past 7 days)"
-ITEM = {"pe_lessons": "PE lessons attended in past 7 days: 1 = none, 2 = once, 3 = twice, 4 = three times, 5 = four times or more",
-        "school_outside_pe": "Activity at school outside PE: 1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",
-        "after_school": "Activity right after school: same codes as school_outside_pe",
-        "evenings": "Activity in the evenings: same codes as school_outside_pe",
-        "weekend": "Activity at the weekend: 1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",
-        "sweat_hard_breathing": "Activities causing sweating or hard breathing: same codes as weekend",
-        "week_description": "Description of past 7 days: 1 = no activity, 2 = light, 3 = moderate, 4 = vigorous, 5 = very vigorous"}
+ITEM = {"pe_lessons": "1 = none, 2 = once, 3 = twice, 4 = three times, 5 = four times or more",
+        "school_outside_pe": "1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",
+        "after_school": "1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",
+        "evenings": "1 = never, 2 = 1-2 times, 3 = 3-4 times, 4 = almost every day, 5 = every day",
+        "weekend": "1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",
+        "sweat_hard_breathing": "1 = never, 2 = sometimes, 3 = often, 4 = almost always, 5 = always",
+        "week_description": "1 = no physical activity, 2 = light, 3 = moderate, 4 = vigorous, 5 = very vigorous"}
 FFQ_F = "0 = never, 1 = 1-3 times/month, 2 = 1-2 times/week, 3 = 3-4 times/week, 4 = once a day, 5 = twice a day or more"
+
+
+NAME = {"walking": "walking", "running": "running or jogging", "football": "football", "volleyball": "volleyball",
+        "basketball": "basketball", "swimming": "swimming", "gymnastics_aerobics": "gymnastics or aerobics",
+        "pencak_silat": "pencak silat", "cycling": "cycling", "other": "other activity",
+        "no_time": "no time (study, tutoring, etc.)", "no_facilities": "no facilities (e.g. field, bicycle)",
+        "illness_injury": "illness or injury", "dislike_sport": "dislike of sport",
+        "other_weather": "weather (recoded from 'other')", "other_tired_low_motivation": "tiredness or low motivation (recoded from 'other')",
+        "other_no_companion": "no companion (recoded from 'other')",
+        "other_family_customary_religious_arts": "family, customary, religious or arts activities (recoded from 'other')",
+        "other_uncoded": "other, not codable", "no_barrier_written": "'no barrier' written under 'other'",
+        "rice": "rice", "instant_noodles": "instant noodles", "tempeh": "tempeh (fried or boiled)", "tofu": "tofu",
+        "chicken": "chicken (fried or grilled)", "fish": "fish (catfish, milkfish, etc.)", "egg": "egg (fried or boiled)",
+        "vegetables_cabbage_carrot": "vegetables (cabbage or carrot)", "spinach": "spinach", "water_spinach": "water spinach",
+        "chilli_sauce": "chilli sauce (sambal)", "banana": "banana", "mango": "mango", "orange": "orange",
+        "sweetened_drinks": "sweetened drinks (sweet tea, syrup)", "soft_drinks": "soft drinks", "milk": "milk (carton or liquid)",
+        "fried_snacks": "fried snacks", "packaged_snacks": "packaged snacks (chips, sweets, etc.)"}
+PA_LABEL = {"pe_lessons": "PE lessons attended in past 7 days (item 2)",
+            "school_outside_pe": "Physical activity at school outside PE, past 7 days (item 3)",
+            "after_school": "Physical activity right after school, past 7 days (item 4)",
+            "evenings": "Physical activity in the evenings, past 7 days (item 5)",
+            "weekend": "Physical activity at the weekend (item 6)",
+            "sweat_hard_breathing": "Activities causing sweating or hard breathing, past 7 days (item 7)",
+            "week_description": "Description of physical activity in past 7 days (item 8)"}
+# portion unit and the value given to each answer option (clean.py, FOODS)
+PORTION = {"rice": "full plates (1/2 plate = 0.5, 1 small plate = 0.75, 1 full plate = 1)",
+           "instant_noodles": "packs (1/2 pack = 0.5, 1 pack = 1, 2 packs = 2)",
+           "tempeh": "small pieces of 3 x 3 cm (1, 2 or 3 pieces)",
+           "tofu": "medium pieces (1, 2 or 3 pieces)",
+           "chicken": "medium pieces (1 small piece, wing = 0.5, 1 medium piece, breast or thigh = 1, 2 pieces = 2)",
+           "fish": "pieces (1 small piece = 1, 2 pieces = 2, 3 pieces = 3)",
+           "egg": "eggs (1/2 egg = 0.5, 1 egg = 1, 2 eggs = 2)",
+           "vegetables_cabbage_carrot": "vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",
+           "spinach": "vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",
+           "water_spinach": "vegetable bowls (1/2 bowl = 0.5, 1 bowl = 1, 2 bowls = 2)",
+           "chilli_sauce": "tablespoons (1 teaspoon = 0.333, 1 tablespoon = 1, 2 tablespoons = 2)",
+           "banana": "fruits (1/2 fruit = 0.5, 1 fruit = 1, 2 fruits = 2)",
+           "mango": "medium fruits (1/2 medium fruit = 0.5, 1 medium fruit = 1, 2 fruits = 2)",
+           "orange": "medium fruits (1 small fruit = 0.75, 1 medium fruit = 1, 2 fruits = 2)",
+           "sweetened_drinks": "glasses (1/2 glass = 0.5, 1 glass = 1, 2 glasses = 2)",
+           "soft_drinks": "cans (1/2 can = 0.5, 1 can = 1, 2 cans = 2)",
+           "milk": "glasses (1/2 glass = 0.5, 1 glass = 1, 2 glasses = 2)",
+           "fried_snacks": "pieces (1, 2 or 3 pieces)",
+           "packaged_snacks": "medium packs (1 small pack = 0.5, 1 medium pack = 1, 2 packs = 2)"}
 
 
 def describe(v):
@@ -85,18 +132,26 @@ def describe(v):
         return {"label": "Highest parental education mentioned",
                 "codes": "primary_or_less, junior_secondary, senior_secondary, tertiary; missing = not codable or suppressed"}
     if v.startswith("pa1_") and v.endswith("_multi_tick"):
-        return {"label": f"More than one frequency ticked for {v[4:-11]} (cell set to missing in pa1_{v[4:-11]})", "codes": "0 = no, 1 = yes"}
+        a = v[4:-11]
+        return {"label": f"More than one frequency ticked for {NAME[a]} (item 1; pa1_{a} set to missing)", "codes": "0 = no, 1 = yes"}
     if v.startswith("pa1_"):
-        return {"label": f"Leisure-time activity in past 7 days: {v[4:]}", "codes": FREQ5 + "; missing = more than one frequency ticked"}
+        return {"label": f"Leisure-time activity in past 7 days (item 1): {NAME[v[4:]]}",
+                "codes": FREQ5 + "; missing = more than one frequency ticked"}
     if v.startswith("pa_"):
-        return {"label": "PAQ-A-based item", "codes": ITEM[v[3:]]}
+        return {"label": PA_LABEL[v[3:]], "codes": ITEM[v[3:]]}
     if v.startswith("barrier_"):
-        return {"label": f"Barrier to physical activity in past 7 days: {v[8:]}", "codes": "0 = not reported, 1 = reported"}
+        return {"label": f"Barrier to physical activity in past 7 days (item 9): {NAME[v[8:]]}", "codes": "0 = not reported, 1 = reported"}
     if v.endswith("_freq"):
-        return {"label": f"Consumption frequency, past month: {v[4:-5]}", "codes": FFQ_F}
+        return {"label": f"Consumption frequency in past month: {NAME[v[4:-5]]}", "codes": FFQ_F}
     if v.endswith("_portion"):
-        return {"label": f"Usual portion of {v[4:-8]} in household-measure units (0 when never eaten)", "codes": "numeric"}
-    return {"label": "", "codes": ""}
+        f = v[4:-8]
+        return {"label": f"Usual portion of {NAME[f]}, in {PORTION[f]}",
+                "codes": "numeric; 0 when never eaten; most common portion of the item when a frequency was given without a portion"}
+    raise KeyError(v)
+
+
+def dictionary(d):
+    return pd.DataFrame([dict(variable=v, **describe(v), n_missing=int(d[v].isna().sum())) for v in d.columns])
 
 
 def inside_git(path):
@@ -196,8 +251,7 @@ def main(src, out):
     d = d.sample(frac=1, random_state=secrets.randbits(32)).reset_index(drop=True)
     d.insert(0, "record_id", [f"R{i:04d}" for i in range(1, len(d) + 1)])
     d.to_csv(out / "e2_dataset.csv", index=False)
-    dic = pd.DataFrame([dict(variable=v, **describe(v), n_missing=int(d[v].isna().sum())) for v in d.columns])
-    dic.to_csv(out / "e2_data_dictionary.csv", index=False)
+    dictionary(d).to_csv(out / "e2_data_dictionary.csv", index=False)
     import json
     (out / "e2_key_numbers.json").write_text(json.dumps({
         "n_records": int(len(d)), "n_variables": int(d.shape[1]), "k": K,
@@ -212,6 +266,10 @@ def main(src, out):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) == 4 and sys.argv[1] == "--dictionary":
+        out = Path(sys.argv[3]).resolve()
+        dictionary(pd.read_csv(sys.argv[2])).to_csv(out / "e2_data_dictionary.csv", index=False)
+    elif len(sys.argv) == 3:
+        main(sys.argv[1], sys.argv[2])
+    else:
         sys.exit(__doc__)
-    main(sys.argv[1], sys.argv[2])
