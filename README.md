@@ -16,11 +16,22 @@ Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-jpah-adolescen
 | `hasil/figures/` | Gambar 1–3 (PNG 300 dpi + PDF) |
 | `hasil/manifest.yaml` | tujuan file di hub |
 | `labels.yaml` | kunci kode → label tampilan |
+| `referensi/` | rujukan WHO 2007 BMI-for-age (LMS) |
+| `requirements.txt` | versi paket terkunci |
 
 ## Data
 Data mentah dan dataset bersih per siswa memuat data anak (nama, email, alamat) dan **tidak pernah masuk git**
-(`.gitignore`). Disimpan penulis secara lokal. `clean.py`, `analysis.py` dan `make_tables.py` masih memakai jalur file
-sesi analisis; sesuaikan ke `data/` lokal sebelum menjalankan ulang. `make_figures.py` hanya membaca tabel agregat.
+(`.gitignore`). Disimpan penulis secara lokal.
+
+## Menjalankan ulang (Gate 4)
+```
+pip install -r requirements.txt
+kode/jalankan_semua.sh /jalur/ke/ekspor_google_form.csv
+git diff --stat hasil/        # tanpa perubahan tabel = hasil tereproduksi
+```
+Berkas kerja per siswa ditulis ke `data/kerja/` (di-.gitignore). Rujukan WHO 2007 BMI-for-age ada di
+`referensi/bfawho2007.txt` (paket anthroplus WHO). Tidak ada langkah acak dalam analysis; uji permutasi sekolah bersifat
+eksak (30 penugasan). Pengacakan baris dataset E2 (`deidentify.py`) sengaja tidak diberi seed.
 
 ## Kirim ke hub
 ```

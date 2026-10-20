@@ -1,12 +1,16 @@
 """Pembersihan & pengodean data survei PA dan nutrisi remaja SMP (Badung, 2025).
-Input : raw.csv (ekspor Google Form)
-Output: clean.pkl, dup_pairs.pkl, coding_log.csv
+Input : ekspor Google Form (CSV), jalur sebagai argumen pertama (bawaan: raw.csv di folder kerja)
+Output: clean.pkl, dup_pairs.pkl, coding_log.csv, meta.pkl di folder kerja (jalankan lewat kode/jalankan_semua.sh)
 """
 import re
+import sys
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
-RAW = "raw.csv"
+RAW = sys.argv[1] if len(sys.argv) > 1 else "raw.csv"
+LMS = Path(__file__).resolve().parent.parent / "referensi" / "bfawho2007.txt"  # WHO 2007 BMI-for-age (anthroplus)
 log = []  # (langkah, keterangan, n)
 
 
@@ -71,7 +75,7 @@ out["imt"] = (bb / (tb / 100) ** 2).round(2)
 AGE_M = {7: 155, 8: 167, 9: 179}  # bulan (12,9 / 13,9 / 14,9 tahun)
 out["usia_bln_aprox"] = out["kelas"].map(AGE_M)
 
-lms = pd.read_csv("/home/claude/ext/anthroplus/data-raw/growthstandards/bfawho2007.txt", sep="\t")
+lms = pd.read_csv(LMS, sep="\t")
 
 
 def baz(sex, age_m, bmi):

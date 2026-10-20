@@ -1,0 +1,9 @@
+# Versi paket untuk menjalankan ulang analisis E1/E2 (Gate 4). Python 3.13.
+# Dikunci 20 Okt 2026 dari lingkungan sesi Claude; reproduksi penuh 22 tabel pada 19 Okt 2026 memakai lingkungan sesi
+# sebelumnya yang versinya tidak tercatat. Gambar dari make_figures.py identik isinya; rendering font dapat berbeda antarversi.
+pandas==3.0.5
+numpy==2.5.3
+scipy==1.18.1
+statsmodels==0.15.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
