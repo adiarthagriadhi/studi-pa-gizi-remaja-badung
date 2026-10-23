@@ -5,3 +5,7 @@ data/
 *.pkl
 *.sav
 __pycache__/
+# ekspor Google Form dan berkas kerja per siswa tidak boleh di-commit di luar data/ juga
+/*.csv
+kode/*.csv
+kode/*.log

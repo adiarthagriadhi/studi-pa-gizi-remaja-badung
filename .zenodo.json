@@ -1,0 +1,39 @@
+{
+  "title": "Analysis code and aggregate results: physical activity types, barriers and eating patterns among junior high school students in urban, suburban and rural Badung, Bali (2025 school survey)",
+  "upload_type": "software",
+  "description": "Cleaning, analysis, school-clustering sensitivity and de-identification code, with aggregate result tables and figures, for a cross-sectional survey of 1,898 students in grades 7–9 at five public junior high schools in Badung Regency, Bali, Indonesia (17 September – 2 October 2025). No student-level data are included; the de-identified student-level dataset is in Mendeley Data (doi:10.17632/f2mvjrf32w.1). Code: MIT licence; aggregate results and documents: CC BY 4.0.",
+  "creators": [
+    {
+      "name": "Griadhi, I Putu Adiartha",
+      "orcid": "0000-0002-9895-9353",
+      "affiliation": "Universitas Udayana"
+    },
+    {
+      "name": "Wahyuni, Nila",
+      "orcid": "0000-0002-1800-5753",
+      "affiliation": "Universitas Udayana"
+    },
+    {
+      "name": "Adhi, Kadek Tresna",
+      "orcid": "0000-0002-1963-448X",
+      "affiliation": "Universitas Udayana"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "physical activity",
+    "adolescents",
+    "barriers",
+    "food frequency questionnaire",
+    "school survey",
+    "Indonesia"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17632/f2mvjrf32w.1",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    }
+  ]
+}

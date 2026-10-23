@@ -2,6 +2,7 @@
 Input: analysed.pkl, results.pkl (dari analysis.py). Output: pkg/results/tables/*.csv + key_numbers.json
 """
 import json
+import os
 import warnings
 from pathlib import Path
 import numpy as np
@@ -9,7 +10,7 @@ import pandas as pd
 from stats_utils import AREAS, kw, chi2, fdr, adj_ols, adj_logit, mixed_icc
 
 warnings.filterwarnings("ignore")
-OUT = Path("pkg/results/tables")
+OUT = Path(os.environ.get("HASIL_TABLES", "pkg/results/tables"))
 OUT.mkdir(parents=True, exist_ok=True)
 d = pd.read_pickle("analysed.pkl")
 R = pd.read_pickle("results.pkl")

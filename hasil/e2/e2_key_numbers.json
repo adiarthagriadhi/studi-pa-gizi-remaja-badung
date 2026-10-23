@@ -1,0 +1,12 @@
+{
+  "n_records": 1898,
+  "n_variables": 81,
+  "k": 5,
+  "suppressed_cells": {
+    "bmi_for_age_cat": 12,
+    "parental_education": 160
+  },
+  "records_k_below_K": 0,
+  "k_min": 5,
+  "unique_before_all_candidate_qi": 633
+}
