@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or the aggregate results, please cite them as below."
+title: "Analysis code and aggregate results: physical activity types, barriers and eating patterns among junior high school students in urban, suburban and rural Badung, Bali (2025 school survey)"
+authors:
+  - family-names: Griadhi
+    given-names: I Putu Adiartha
+    orcid: "https://orcid.org/0000-0002-9895-9353"
+    affiliation: "Department of Physiology, Faculty of Medicine, Universitas Udayana"
+  - family-names: Wahyuni
+    given-names: Nila
+    orcid: "https://orcid.org/0000-0002-1800-5753"
+    affiliation: "Department of Physiology, Faculty of Medicine, Universitas Udayana"
+  - family-names: Adhi
+    given-names: Kadek Tresna
+    orcid: "https://orcid.org/0000-0002-1963-448X"
+    affiliation: "Department of Public Health and Preventive Medicine, Faculty of Medicine, Universitas Udayana"
+version: 1.0.0
+date-released: 2026-10-24
+license: MIT
+repository-code: "https://github.com/adiarthagriadhi/studi-pa-gizi-remaja-badung"
+keywords: [physical activity, adolescents, barriers, food frequency, school survey, Indonesia]
+references:
+  - type: dataset
+    title: "Physical activity, food consumption frequency and barriers to physical activity among 1,898 junior high school students in urban, suburban and rural Bali, Indonesia"
+    doi: 10.17632/f2mvjrf32w.1
+    publisher: {name: Mendeley Data}

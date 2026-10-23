@@ -1,5 +1,13 @@
 # studi-pa-gizi-remaja-badung (E1)
 
+**English summary.** Analysis code and aggregate results for a cross-sectional school survey of physical activity,
+barriers to physical activity and eating patterns among 1,898 students in grades 7–9 at five public junior high schools
+in urban (Kuta), suburban (Abiansemal) and rural (Petang) Badung Regency, Bali, Indonesia (17 September – 2 October 2025;
+Research Ethics Committee, Faculty of Medicine, Universitas Udayana, No. 2614/UN14.2.2.VII.14/LT/2025). The repository
+contains **no student-level data**. The de-identified student-level dataset is in Mendeley Data
+(doi:10.17632/f2mvjrf32w.1). Re-run: `pip install -r requirements.txt`, then `kode/jalankan_semua.sh <Google Form export>`.
+Code: MIT; aggregate results and documents: CC BY 4.0 (see `LICENSE`). Cite via `CITATION.cff`.
+
 Survei potong lintang aktivitas fisik, pola makan dan hambatan aktivitas fisik pada siswa SMP negeri di daerah
 urban (Kuta), suburban (Abiansemal) dan rural (Petang), Kabupaten Badung, Bali. Respons: 17 Sep – 2 Okt 2025;
 1.898 siswa unik dari 1.977 respons. Protokol etik: Komisi Etik Penelitian FK Unud No. 2614/UN14.2.2.VII.14/LT/2025
