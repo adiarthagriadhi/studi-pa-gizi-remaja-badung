@@ -13,7 +13,7 @@ urban (Kuta), suburban (Abiansemal) dan rural (Petang), Kabupaten Badung, Bali. 
 1.898 siswa unik dari 1.977 respons. Protokol etik: Komisi Etik Penelitian FK Unud No. 2614/UN14.2.2.VII.14/LT/2025
 (protokol 2025.02.1.1185): persetujuan awal 8 Sep 2025, amandemen bernomor sama 22 Okt 2025.
 
-Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-jpah-adolescent-pa-types-barriers` (kode portofolio E1).
+Naskah: hub `adiarthagriadhi/Article-Preparation`, `articles/2026-josh-adolescent-pa-types-barriers` (kode portofolio E1).
 
 ## Isi
 | Folder | Isi |

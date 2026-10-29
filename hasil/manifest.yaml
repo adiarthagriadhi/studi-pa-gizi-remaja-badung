@@ -1,5 +1,5 @@
 targets:
-  - article: 2026-jpah-adolescent-pa-types-barriers
+  - article: 2026-josh-adolescent-pa-types-barriers
     files:
       - from: tables/*.csv
         to: data/tables/
